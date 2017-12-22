@@ -46,16 +46,16 @@ if ARGV[0].to_s.strip.size > 0 && (ARGV[1].to_s.strip.size > 0 || ARGV[0].to_s.d
           price = prices[ARGV[2].strip.downcase]
           if price.nil?
             puts 'Unkown currency provided as third argument, using default...'
-            puts "  BTC: #{prices['btc']}"
-            puts "  EUR: #{prices['eur']}"
-            puts "  USD: #{prices['usd']}"
+            puts "  BTC: Ƀ#{prices['btc']}"
+            puts "  EUR: €#{prices['eur']}"
+            puts "  USD: $#{prices['usd']}"
           else
-            puts "  #{ARGV[2].upcase}: #{price}"
+            puts "  #{ARGV[2].upcase}: #{price}#{ARGV[2]}"
           end
         else
-          puts "  BTC: #{prices['btc']}"
-          puts "  EUR: #{prices['eur']}"
-          puts "  USD: #{prices['usd']}"
+          puts "  BTC: Ƀ#{prices['btc']}"
+          puts "  EUR: €#{prices['eur']}"
+          puts "  USD: $#{prices['usd']}"
         end
 
         puts
@@ -83,16 +83,16 @@ if ARGV[0].to_s.strip.size > 0 && (ARGV[1].to_s.strip.size > 0 || ARGV[0].to_s.d
         price = prices[ARGV[2].strip.downcase]
         if price.nil?
           puts 'Unkown currency provided as third argument, using default...'
-          puts "  BTC: #{prices['btc']}"
-          puts "  EUR: #{prices['eur']}"
-          puts "  USD: #{prices['usd']}"
+          puts "  BTC: Ƀ#{prices['btc']}"
+          puts "  EUR: €#{prices['eur']}"
+          puts "  USD: $#{prices['usd']}"
         else
-          puts "  #{ARGV[2].upcase}: #{price}"
+          puts "  #{ARGV[2].upcase}: #{price}#{ARGV[2]}"
         end
       else
-        puts "  BTC: #{prices['btc']}"
-        puts "  EUR: #{prices['eur']}"
-        puts "  USD: #{prices['usd']}"
+        puts "  BTC: Ƀ#{prices['btc']}"
+        puts "  EUR: €#{prices['eur']}"
+        puts "  USD: $#{prices['usd']}"
       end
 
       puts
